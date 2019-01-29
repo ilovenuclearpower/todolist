@@ -7,7 +7,7 @@ class BitcoinPrice extends Component {
 			bitcoinprice: {}
 		};
 	}
-	ComponentDidMount() {
+	componentDidMount() {
 		fetch("https://api.coindesk.com/v1/bpi/currentprice.json").then(
 			Response =>
 				this.setState(
