@@ -12,7 +12,7 @@ class BitcoinPrice extends Component {
 			Response =>
 				this.setState(
 					this.state.bitcoinprice,
-					JSON.parse(currentprice.json)
+					JSON.parse(Response.json)
 				)
 		);
 	}
