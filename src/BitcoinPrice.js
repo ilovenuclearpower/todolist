@@ -13,7 +13,7 @@ class BitcoinPrice extends Component {
         return Response.json();
       })
       .then(Result => {
-        this.setState({ bitcoinprice: JSON.parse(Result) });
+        this.setState({ bitcoinprice: Result });
       })
       .then(console.log(this.state.bitcoinprice.bpi.USD.rate));
   }
