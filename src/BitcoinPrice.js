@@ -13,16 +13,18 @@ class BitcoinPrice extends Component {
         return Response.json();
       })
       .then(Result => {
+        console.log(Result);
         this.setState({ bitcoinprice: Result });
-      })
-      .then(console.log(this.state.bitcoinprice.bpi.USD.rate));
+      });
   }
 
   render() {
     if (Object.keys(this.state.bitcoinprice).length === 0) {
       return <div className="ticker"> Bitcoins!</div>;
     } else {
-      return <div className="ticker">{this.state.bitcoinprice}</div>;
+      return (
+        <div className="ticker">{this.state.bitcoinprice.bpi.USD.rate}</div>
+      );
     }
   }
 }
