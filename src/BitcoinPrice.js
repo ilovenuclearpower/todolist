@@ -22,9 +22,7 @@ class BitcoinPrice extends Component {
     if (Object.keys(this.state.bitcoinprice).length === 0) {
       return <div className="ticker"> Bitcoins!</div>;
     } else {
-      return (
-        <div className="ticker">{this.state.bitcoinprice.bpi.USD.rate}</div>
-      );
+      return <div className="ticker">{this.state.bitcoinprice}</div>;
     }
   }
 }
