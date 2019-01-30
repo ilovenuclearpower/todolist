@@ -10,7 +10,7 @@ class BitcoinPrice extends Component {
   componentDidMount() {
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
       .then(Response => {
-        return Response.json;
+        return Response.json();
       })
       .then(Result => {
         this.setState({ bitcoinprice: JSON.parse(Result) });
