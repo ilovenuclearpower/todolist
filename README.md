@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+A very simple todolist app that I wrote and am modifying in order to learn more about front-end development. The latest feature is a component that fetches the current price of Bitcoin (returned as a promise) using the fetch() method - then parses the json using the .json() method (also returning a promise.
+
+Special thanks to CoinDesk for their very simple JSON api.
+
 ## Available Scripts
 
 In the project directory, you can run:
